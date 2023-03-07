@@ -17,7 +17,7 @@ namespace CMP1903M_A01_2223
             get => cardNumber;
             set
             {
-                if (value > 13 || value < 1) // Validation to check that the number is within the range for the cards
+                if (value > 14 || value < 1) // Validation to check that the number is within the range for the cards
                 {
                     throw new ArgumentException("Number for card is not within the specified range"); // Throwing an exception to show that the card is not within the range
                 }
@@ -30,7 +30,7 @@ namespace CMP1903M_A01_2223
             get => suitNumber;
             set
             {
-                if (value > 4 || value < 1) // Validation to check that the number is within the range of suits
+                if (value > 5 || value < 1) // Validation to check that the number is within the range of suits
                 {
                     throw new ArgumentException("Number for suit of the card is not within the specified range"); // Throwing an exception to show that the card is not within the range
                 }
